@@ -1,6 +1,6 @@
 ## Natural Image Matting
 
-Given an image, the code in this project can separate its foreground and background. The algorithm is derived from  Levin's research[1] and I have implemented this algorithm in C++. This applicaiton requires openCV, Eigen and Suitesparse. Please make sure you have installed these libraries before building and running my application.
+Given an image, the code in this project can separate its foreground and background. The algorithm is derived from  Levin's research[1] and I have implemented this algorithm in C++. This applicaiton requires openCV, Eigen, CMake and Suitesparse. Please make sure you have installed these libraries before building and running my application.
 
 A pdf report is also included in `report` folder to help you understand how this algorithm works.
 
@@ -13,7 +13,7 @@ It can be much easier to install OpenCV on macOS with Homebrew.
 2. Run the following commands to install OpenCV.
 ~~~~
 brew update
-brew tap homebrew/homebrew-science
+brew tap homebrew/core
 brew install opencv
 ~~~~
 
@@ -24,7 +24,7 @@ This repo contains the required source files of Eigen. You do not need to instal
 ### 3. Install Suiteparse
 1. Download `SuiteSparse` from http://faculty.cse.tamu.edu/davis/suitesparse.html and unzip it to `/imageMatting/code`.
 
-2. Build the library using the following commands.
+2. Build the library using the following commands (this step can take quite a while).
 ~~~
 cd imageMatting/code/SuiteSparse;
 make library;
